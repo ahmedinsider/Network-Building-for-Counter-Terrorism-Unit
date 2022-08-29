@@ -1,0 +1,217 @@
+Eagle Shadow:
+
+Router>enable
+Router#configure terminal
+Router(config)#interface FastEthernet0/0
+Router(config-if)#ip address 192.168.1.1 255.255.255.0
+Router(config-if)#ip address 192.168.1.1 255.255.255.0
+Router(config-if)#no shutdown
+Router(config)#ip route 192.168.2.0 255.255.255.0 11.0.0.3
+Router(config)#interface Serial0/0
+Router(config)#no ip route 192.168.2.0 255.255.255.0 11.0.0.3
+Router(config)#ip route 192.168.2.0 255.255.255.0 11.0.0.3
+Router(config)#ip route 192.168.3.0 255.255.255.0 11.0.0.3
+Router(config)#ip route 192.168.4.0 255.255.255.0 11.0.0.3
+Router(config)#ip route 192.168.5.0 255.255.255.0 11.0.0.3
+Router(config)#ip route 192.168.6.0 255.255.255.0 11.0.0.3
+Router(config)#ip route 12.0.0.0 255.0.0.0 11.0.0.3
+Router(config)#ip route 13.0.0.0 255.0.0.0 12.0.0.3
+Router(config)#ip route 14.0.0.0 255.0.0.0 13.0.0.3
+Router(config)#ip route 15.0.0.0 255.0.0.0 14.0.0.3
+
+
+Vegas:
+
+Router>en
+Router#config ter
+Router(config-if)#ip address 192.168.2.1 255.255.255.0
+Router(config)#interface Serial0/0
+Router(config)#interface Serial0/0
+Router(config-if)#no shutdown
+Router(config-if)#ip address 11.0.0.3 255.0.0.0
+Router(config)#interface Serial0/2
+Router(config-if)#no shutdown
+Router(config-if)#ip address 12.0.0.1 255.0.0.0
+Router(config-if)#ip address 12.0.0.1 255.0.0.0
+Router(config)#interface Serial0/2
+Router(config)#interface Serial0/2
+Router(config)#interface Serial0/1
+Router(config)#interface Serial0/2
+Router(config-if)#ip address 12.0.0.1 255.0.0.0
+Router(config)#interface Serial0/1
+Router(config-if)#ip address 12.0.0.1 255.0.0.0
+Router(config-if)#ip address 12.0.0.1 255.0.0.0
+Router(config-if)#no shutdown
+Router(config)#interface Serial0/2
+Router(config-if)#ip address 16.0.0.1 255.0.0.0
+Router(config-if)#ip address 16.0.0.1 255.0.0.0
+Router(config-if)#no shutdown
+Router(config)#ip route 192.168.1.0 255.255.255.0 11.0.0.1
+Router(config)#no ip route 192.168.1.0 255.255.255.0 11.0.0.1
+Router(config)#ip route 192.168.1.0 255.255.255.0 11.0.0.1
+Router(config)#ip route 192.168.3.0 255.255.255.0 12.0.0.3
+Router(config)#ip route 192.168.3.0 255.255.255.0 12.0.0.3
+Router(config)#ip route 192.168.3.0 255.255.255.0 12.0.0.3
+Router(config)#ip route 192.168.4.0 255.255.255.0 12.0.0.3
+Router(config)#ip route 192.168.5.0 255.255.255.0 12.0.0.3
+Router(config)#ip route 192.168.6.0 255.255.255.0 12.0.0.3
+Router(config)#ip route 192.168.6.0 255.255.255.0 12.0.0.3
+Router(config)#ip route 192.168.6.0 255.255.255.0 12.0.0.3
+Router(config)#ip route 192.168.6.0 255.255.255.0 12.0.0.3
+Router(config)#ip route 13.0.0.0 255.0.0.0 12.0.0.3
+Router(config)#ip route 13.0.0.0 255.0.0.0 12.0.0.3
+Router(config)#ip route 13.0.0.0 255.0.0.0 12.0.0.3
+Router(config)#ip route 14.0.0.0 255.0.0.0 13.0.0.3
+Router(config)#ip route 15.0.0.0 255.0.0.0 14.0.0.3
+Router(config)#ip route 15.0.0.0 255.0.0.0 14.0.0.3
+Router(config)#ip route 12.0.0.0 255.0.0.0 11.0.0.3
+Router(config)#ip route 12.0.0.0 255.0.0.0 11.0.0.3
+Router(config)#no ip route 192.168.3.0 255.255.255.0 12.0.0.3
+Router(config)#ip route 192.168.3.0 255.255.255.0 12.0.0.3
+Router(config)#ip route 192.168.3.0 255.255.255.0 12.0.0.3
+Router(config)#ip route 192.168.3.0 255.255.255.0 12.0.0.3
+Router(config)#ip route 192.168.4.0 255.255.255.0 12.0.0.3
+Router(config)#interface FastEthernet0/0
+Router(config)#ip route 192.168.7.0 255.255.255.0 16.0.0.3
+Router(config)#interface Serial0/0
+
+
+Black Arrow:
+
+Router>enable
+Router#configure terminal
+Router(config)#interface FastEthernet0/0
+Router(config-if)#ip address 192.168.3.1 255.255.255.0
+Router(config-if)#ip address 192.168.3.1 255.255.255.0
+Router(config-if)#ip address 192.168.3.1
+Router(config)#ip route 192.168.2.0 255.255.255.0 12.0.0.1
+Router(config)#no ip route 192.168.2.0 255.255.255.0 12.0.0.1
+Router(config)#ip route 192.168.2.0 255.255.255.0 12.0.0.1
+Router(config)#no ip route 192.168.2.0 255.255.255.0 12.0.0.1
+Router(config)#ip route 192.168.2.0 255.255.255.0 12.0.0.1
+Router(config)#ip route 192.168.1.0 255.255.255.0 12.0.0.1
+Router(config)#ip route 192.168.4.0 255.255.255.0 13.0.0.3
+Router(config)#ip route 192.168.4.0 255.255.255.0 13.0.0.3
+Router(config)#ip route 192.168.5.0 255.255.255.0 13.0.0.3
+Router(config)#ip route 192.168.6.0 255.255.255.0 13.0.0.3
+Router(config)#no ip route 192.168.6.0 255.255.255.0 13.0.0.3
+Router(config)#no ip route 192.168.5.0 255.255.255.0 13.0.0.3
+Router(config)#no ip route 192.168.4.0 255.255.255.0 13.0.0.3
+Router(config)#no ip route 192.168.1.0 255.255.255.0 12.0.0.1
+Router(config)#no ip route 192.168.2.0 255.255.255.0 12.0.0.1
+Router(config)#ip route 192.168.1.0 255.255.255.0 12.0.0.1
+Router(config)#ip route 192.168.2.0 255.255.255.0 12.0.0.1
+Router(config)#ip route 192.168.4.0 255.255.255.0 13.0.0.3
+Router(config)#ip route 192.168.5.0 255.255.255.0 13.0.0.3
+Router(config)#ip route 192.168.6.0 255.255.255.0 13.0.0.3
+Router(config)#ip route 15.0.0.0 255.0.0.0 14.0.0.3
+Router(config)#ip route 14.0.0.0 255.0.0.0 13.0.0.3
+Router(config)#ip route 13.0.0.0 255.0.0.0 12.0.0.3
+Router(config)#ip route 13.0.0.0 255.0.0.0 12.0.0.3
+Router(config)#ip route 13.0.0.0 255.0.0.0 12.0.0.3
+
+
+
+Shadow Vanguard:
+
+Router>enable
+Router#configure terminal
+Router(config)#interface FastEthernet0/0
+Router(config-if)#no shutdown
+Router(config-if)#ip address 192.168.4.1 255.255.255.0
+Router(config-if)#ip address 192.168.4.1 255.255.255.0
+Router(config)#ip route 192.168.1.0 255.255.255.0 13.0.0.1
+Router(config)#ip route 192.168.2.0 255.255.255.0 13.0.0.1
+Router(config)#ip route 192.168.3.0 255.255.255.0 13.0.0.1
+Router(config)#ip route 192.168.5.0 255.255.255.0 13.0.0.1
+Router(config)#no ip route 192.168.5.0 255.255.255.0 13.0.0.1
+Router(config)#ip route 192.168.5.0 255.255.255.0 14.0.0.3
+Router(config)#ip route 192.168.6.0 255.255.255.0 14.0.0.3
+Router(config)#ip route 15.0.0.0 255.0.0.0 14.0.0.1
+%Invalid next hop address (it's this router)
+Router(config)#ip route 14.0.0.0 255.0.0.0 13.0.0.1
+Router(config)#no ip route 14.0.0.0 255.0.0.0 13.0.0.1
+Router(config)#ip route 14.0.0.0 255.0.0.0 13.0.0.3
+%Invalid next hop address (it's this router)
+Router(config)#ip route 13.0.0.0 255.0.0.0 12.0.0.3
+Router(config)#ip route 12.0.0.0 255.0.0.0 11.0.0.3
+Router(config)#ip route 15.0.0.0 255.255.255.0 14.0.0.3
+Router(config)#ip route 14.0.0.0 255.255.255.0 13.0.0.3
+Router(config)#no ip route 192.168.1.0 255.255.255.0 13.0.0.1
+Router(config)#no ip route 192.168.2.0 255.255.255.0 13.0.0.1
+Router(config)#no ip route 192.168.3.0 255.255.255.0 13.0.0.1
+Router(config)#no ip route 192.168.5.0 255.255.255.0 14.0.0.3
+Router(config)#no ip route 192.168.6.0 255.255.255.0 14.0.0.3
+Router(config)#no ip route 13.0.0.0 255.0.0.0 12.0.0.3
+Router(config)#no ip route 12.0.0.0 255.0.0.0 11.0.0.3
+Router(config)#no ip route 15.0.0.0 255.255.255.0 14.0.0.3
+Router(config-router)#network 192.168.1.0
+Router(config-router)#network 192.168.2.0
+Router(config-router)#network 192.168.3.0
+Router(config-router)#network 192.168.4.0
+Router(config-router)#network 192.168.5.0
+Router(config-router)#network 192.168.6.0
+Router(config)#ip route 192.168.1.0 255.255.255.0 13.0.0.1
+Router(config)#ip route 192.168.2.0 255.255.255.0 13.0.0.1
+Router(config)#ip route 192.168.3.0 255.255.255.0 13.0.0.1
+Router(config)#ip route 192.168.5.0 255.255.255.0 14.0.0.3
+Router(config)#ip route 192.168.6.0 255.255.255.0 14.0.0.3
+Router(config)#ip route 15.0.0.0 255.0.0.0 14.0.0.3
+Router(config)#ip route 13.0.0.0 255.0.0.0 12.0.0.3
+Router(config)#ip route 12.0.0.0 255.0.0.0 11.0.0.3
+
+
+
+
+Raven:
+
+Router>enable
+Router#configure terminal
+Router(config)#interface FastEthernet0/0
+Router(config-if)#no shutdown
+Router(config-if)#ip address 192.168.5.1 255.255.255.0
+Router(config)#interface Serial0/0
+Router(config-if)#ip address 14.0.0.3 255.0.0.0
+Router(config-if)#ip address 14.0.0.3 255.0.0.0
+Router(config-if)#no shutdown
+Router(config)#interface Serial0/0
+Router(config-if)#exit
+Router(config)#interface Serial0/1
+Router(config-if)#ip address 15.0.0.1 255.0.0.0
+Router(config-if)#no shutdown
+Router(config)#ip route 192.168.1.0 255.255.255.0 14.0.0.1
+Router(config)#ip route 192.168.2.0 255.255.255.0 14.0.0.1
+Router(config)#ip route 192.168.3.0 255.255.255.0 14.0.0.1
+Router(config)#ip route 192.168.4.0 255.255.255.0 14.0.0.1
+Router(config)#ip route 192.168.5.0 255.255.255.0 15.0.0.3
+Router(config)#ip route 15.0.0.0 255.0.0.0 14.0.0.3
+Router(config)#ip route 14.0.0.0 255.0.0.0 13.0.0.3
+Router(config)#ip route 13.0.0.0 255.0.0.0 12.0.0.3
+Router(config)#ip route 12.0.0.0 255.0.0.0 11.0.0.3
+Router(config)#ip route 192.168.6.0 255.255.255.0 15.0.0.3
+
+
+
+
+Rogue Spear:
+
+Router>enable
+Router#configure terminal
+Router(config)#interface FastEthernet0/0
+Router(config-if)#ip address 192.168.6.1 255.255.255.0
+Router(config-if)#ip address 192.168.6.1 255.255.255.0
+Router(config)#interface FastEthernet0/0
+Router(config-if)#no shutdown
+Router(config)#interface Serial0/0
+Router(config-if)#ip address 15.0.0.3 255.0.0.0
+Router(config-if)#ip address 15.0.0.3 255.0.0.0
+Router(config-if)#no shutdown
+Router(config)#ip route 192.168.1.0 255.255.255.0 15.0.0.1
+Router(config)#ip route 192.168.2.0 255.255.255.0 15.0.0.1
+Router(config)#ip route 192.168.3.0 255.255.255.0 15.0.0.1
+Router(config)#ip route 192.168.4.0 255.255.255.0 15.0.0.1
+Router(config)#ip route 192.168.5.0 255.255.255.0 15.0.0.1
+Router(config)#ip route 11.0.0.0 255.0.0.0 12.0.0.1
+Router(config)#ip route 12.0.0.0 255.0.0.0 13.0.0.1
+Router(config)#ip route 13.0.0.0 255.0.0.0 14.0.0.1
+Router(config)#ip route 14.0.0.0 255.0.0.0 15.0.0.1
